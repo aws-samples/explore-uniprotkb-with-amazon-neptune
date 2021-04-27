@@ -646,11 +646,6 @@ Resources:
 
                 - |
                   rm -rf ~/SageMaker/Neptune/*
-                - >
-                  aws s3 cp --recursive s3://rafaxublog/notebook/
-                  ~/SageMaker/Neptune --region eu-west-3
-                - |+
-                  chmod -R a+rw ~/SageMaker/Neptune/* 
 
                 - |+
 
