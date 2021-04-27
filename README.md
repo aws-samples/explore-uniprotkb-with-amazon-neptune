@@ -13,10 +13,10 @@ If you would like to try this example yourself, there is a cloud formation stack
 
 | Region | Launch Template |
 |-|-|
-| Europe (Paris) *eu-west-3* |[![eu-west-3 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-3#/stacks/new?stackName=VirtualProctor&templateURL=https://raw.githubusercontent.com/aws-samples/Explore-uniprotkb-with-amazon-neptunedb/UniProtKB.template)|
-| US East (N. Virginia) *us-east-1* |[![us-east-1 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=VirtualProctor&templateURL=https://raw.githubusercontent.com/aws-samples/Explore-uniprotkb-with-amazon-neptunedb/UniProtKB.template)|
-| Asia Pacific (Singapore) *ap-southeast-1* |[![ap-southeast-1 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=VirtualProctor&templateURL=https://raw.githubusercontent.com/aws-samples/Explore-uniprotkb-with-amazon-neptunedb/UniProtKB.template)|
-| Asia Pacific (Sydney) *ap-southeast-2* |[![ap-southeast-2 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=VirtualProctor&templateURL=https://raw.githubusercontent.com/aws-samples/Explore-uniprotkb-with-amazon-neptunedb/UniProtKB.template)|
+| Europe (Paris) *eu-west-3* |[![eu-west-3 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-3#/stacks/new?stackName=VirtualProctor&templateURL=s3://aws-wwps-apj-iss-public-samples/explore-uniprotkb-with-amazon-neptune/UniProtKB.template)|
+| US East (N. Virginia) *us-east-1* |[![us-east-1 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=VirtualProctor&templateURL=s3://aws-wwps-apj-iss-public-samples/explore-uniprotkb-with-amazon-neptune/UniProtKB.template)|
+| Asia Pacific (Singapore) *ap-southeast-1* |[![ap-southeast-1 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=VirtualProctor&templateURL=s3://aws-wwps-apj-iss-public-samples/explore-uniprotkb-with-amazon-neptune/UniProtKB.template)|
+| Asia Pacific (Sydney) *ap-southeast-2* |[![ap-southeast-2 Cloud Formation Template](./images/deploy-to-aws.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=VirtualProctor&templateURL=s3://aws-wwps-apj-iss-public-samples/explore-uniprotkb-with-amazon-neptune/UniProtKB.template)|
 
 The cloud formation stack will create the following resources:
 
