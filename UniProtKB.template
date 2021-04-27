@@ -509,16 +509,7 @@ Resources:
     Type: 'AWS::SageMaker::NotebookInstance'
     Properties:
       InstanceType: !Ref NotebookInstanceType
-      NotebookInstanceName: !Join 
-        - ''
-        - - aws-neptune-
-          - !Select 
-            - '0'
-            - !Split 
-              - '-'
-              - !Ref 'AWS::StackName'
-          - '-'
-          - !Ref Env
+      NotebookInstanceName: explore-uniprotkb-with-amazon-neptune 
       SubnetId: !Ref Subnet1
       SecurityGroupIds:
         - !GetAtt 
