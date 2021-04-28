@@ -509,7 +509,7 @@ Resources:
     Type: 'AWS::SageMaker::NotebookInstance'
     Properties:
       InstanceType: !Ref NotebookInstanceType
-      NotebookInstanceName: explore-uniprotkb-with-amazon-neptune 
+      NotebookInstanceName: aws-neptune-uniprotkb
       SubnetId: !Ref Subnet1
       SecurityGroupIds:
         - !GetAtt 
