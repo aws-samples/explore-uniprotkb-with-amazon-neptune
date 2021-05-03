@@ -2,7 +2,7 @@
 # Explore UniProtKB with Amazon Neptune
 
 ## Introduction
-The [Universal Protein Knowledge Base](https://www.uniprot.org/) (https://www.uniprot.org/) (UniProtKB) is a widely used protein data source that is now available through the Registry of Open Data on AWS. UniProt data is highly structured with many relationships between protein sequences, annotations, ontologies and other related data sources. UniProtKB can be directly accessed via the [UniProt website](https://www.uniprot.org/)  and is available for bulk downloads in several formats, including RDF which is particularly well suited to represent the complex and connected nature of the data as a graph. Creating a custom knowledge base can enable more advanced use cases, such as joining with other data sources, augmenting data with custom annotations and relationships, or inferring new relationships with analytics or machine learning.
+The [Universal Protein Resource (UniProt)](https://www.uniprot.org/) is a widely used resource of protein data that is now available through the Registry of Open Data on AWS. Its centerpiece is the [UniProt Knowledgebase (UniProtKB)](https://www.uniprot.org/help/uniprotkb), a central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. UniProtKB data is highly structured with many relationships between protein sequences, annotations, ontologies and other related data sources. UniProt can be directly accessed via the [UniProt website](https://www.uniprot.org/) and is available for bulk downloads in several formats, including RDF which is particularly well suited to represent the complex and connected nature of the data as a graph. Creating a custom knowledge base can enable more advanced use cases, such as joining with other data sources, augmenting data with custom annotations and relationships, or inferring new relationships with analytics or machine learning.
 
 In this example, we will demonstrate the step-by-step process to create and use your own protein knowledge base using UniProt RDF data. We will show how to ingest a subset of UniProtKB data into your own Amazon Neptune database directly from the Registry of Open Data on AWS. We will then show how to query the data with SPARQL, create new relationships in the data and visualise the data as a graph.
 
@@ -30,7 +30,7 @@ The resources provisioned via the CloudFormation stack are shown in the below di
 
 ![Architecture](./images/architecture.png)
 
-The total time to run the lab is approximately one hour. To load the dataset into the Neptune instance as quickly as possible, we use a large writer instance db.r5.8xlarge which is not covered by the AWS free tier. This will cost approximately 9 USD. Once the data is loaded we should switch to a smaller instance to minimize costs. Here is a detailed cost estimation for loading data in the eu-west-3 region:
+The total time to run the lab is approximately one hour. To load the dataset into the Neptune instance as quickly as possible, we use a large writer instance *db.r5.8xlarge* which is not covered by the AWS free tier. This will cost approximately 9 USD. Once the data is loaded we should switch to a smaller instance to minimize costs. Here is a detailed cost estimation for loading data in the eu-west-3 region:
 
   | Item | Unit Price  | Unit | Cost |
   | ----------- | ----------- | ----------- | ----------- |
