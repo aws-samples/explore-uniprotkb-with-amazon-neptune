@@ -1,5 +1,13 @@
 
-# Explore UniProtKB with Amazon Neptune
+# Exploring the UniProt protein knowledgebase with AWS Open Data and Amazon Neptune
+
+<br><br>
+<div style="display:flex;flex-wrap:wrap;padding:0 4px">
+  <div style="flex:20%;padding:0 10px">
+      <img src="./images/graph_example.png" alt="Links to Q9UBM7" style="margin-top:8px;vertical-align:middle"/>
+  </div>
+
+</div>
 
 ## Introduction
 The [Universal Protein Resource (UniProt)](https://www.uniprot.org/) is a widely used resource of protein data that is now available through the Registry of Open Data on AWS. Its centerpiece is the [UniProt Knowledgebase (UniProtKB)](https://www.uniprot.org/help/uniprotkb), a central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. UniProtKB data is highly structured with many relationships between protein sequences, annotations, ontologies and other related data sources. UniProt can be directly accessed via the [UniProt website](https://www.uniprot.org/) and is available for bulk downloads in several formats, including RDF which is particularly well suited to represent the complex and connected nature of the data as a graph. Creating a custom knowledge base can enable more advanced use cases, such as joining with other data sources, augmenting data with custom annotations and relationships, or inferring new relationships with analytics or machine learning.
