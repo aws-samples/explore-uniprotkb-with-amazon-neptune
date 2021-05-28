@@ -4,12 +4,12 @@
 <br><br>
 <div style="display:flex;flex-wrap:wrap;padding:0 4px">
   <div style="flex:20%;padding:0 10px">
-      <img src="./images/graph_example.png" alt="Links to Q9UBM7" style="margin-top:8px;vertical-align:middle"/>
+      <img alt="Example graph of protein data" src="./images/graph_example.png" alt="Links to Q9UBM7" style="margin-top:8px;vertical-align:middle"/>
   </div>
 
 </div>
 
-## Description
+## Introduction
 The [Universal Protein Resource (UniProt)](https://www.uniprot.org/) is a widely used resource of protein data that is now available through the Registry of Open Data on AWS. Its centerpiece is the [UniProt Knowledgebase (UniProtKB)](https://www.uniprot.org/help/uniprotkb), a central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. UniProtKB data is highly structured with many relationships between protein sequences, annotations, ontologies and other related data sources. UniProt can be directly accessed via the [UniProt website](https://www.uniprot.org/) and is available for bulk downloads in several formats, including RDF which is particularly well suited to represent the complex and connected nature of the data as a graph. Creating a custom knowledge base can enable more advanced use cases, such as joining with other data sources, augmenting data with custom annotations and relationships, or inferring new relationships with analytics or machine learning.
 
 In this example, we will demonstrate the step-by-step process to create and use your own protein knowledge base using UniProt RDF data. We will show how to ingest a subset of UniProtKB data into your own Amazon Neptune database directly from the Registry of Open Data on AWS. We will then show how to query the data with SPARQL, create new relationships in the data and visualise the data as a graph.
@@ -232,16 +232,16 @@ Once all the data is loaded, we no longer need a large writer instance, as we wi
 
 From the Neptune Console, go to *Databases*, choose the Neptune Writer and then click *Modify*. 
 
-![image.png](./images/step-1.png)
+![Downsize Neptune step 1](./images/step-1.png)
 
 In the list of presented DB instance classes, select *db.r5.large*, the smallest instance available, and then click *Continue*.
 
-![image.png](./images/step-2.png)
-![image.png](./images/step-2a.png)
+![Downsize Neptune step 2](./images/step-2.png)
+![Downsize Neptune step 2](./images/step-2a.png)
 
 On the next page, choose *Apply immediately*, and click the *Modify DB Instance* button.
 
-![image.png](./images/step-3.png)
+![Downsize Neptune step 3](./images/step-3.png)
 
 Your Neptune DB instance is now cost optimized for querying. For more information, refer to the steps in the [Neptune Developer Guide](https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-modify.html#manage-console-modify-instance).
 
@@ -467,17 +467,13 @@ WHERE {
 
 ![example 6 results](images/example6.png)
 
+## Cleaning up
+Be sure to delete you cloud formation template when you are finished and no longer need them to avoid incurring future costs. 
+
+![Delete the CloudFormation template](images/cleanup.png)
 
 
-# Conclusion
+## Conclusion
 In this example notebook, we have demonstrated some simple ways to create and use your own protein knowledgebase using the UniProt data available on AWS Open Registry of Data and Amazon Neptune. If you would like to explore further, you can easily run this yourself in your own account. Some other things to try would be joining to other graph databases using federated queries, querying features to train machine learning models, or inferring links with Neptune ML.
 
-
-# **Danger Zone**
-
-Use the following code to reset the database
-
-
-```python
-%db_reset
-```
+To learn more about Healthcare & Life Sciences on AWS, visit [aws.amazon.com/health](https://aws.amazon.com/health).
